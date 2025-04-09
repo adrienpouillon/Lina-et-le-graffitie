@@ -859,7 +859,7 @@
 "uid": "R_NEIGHBORHOOD",
 "graph": {
 "board": {
-"nextid": 18,
+"nextid": 34,
 "x": -401,
 "y": -3,
 "boxes": [
@@ -917,14 +917,14 @@
 {
 "type": 1287,
 "id": 13,
-"x": 635,
-"y": 271,
+"x": 633,
+"y": 272,
 "plugs": [
 {
 "id": 14,
 "type": 3,
 "trgs": [
-16
+19
 ]
 }
 ],
@@ -935,8 +935,8 @@
 {
 "type": 781,
 "id": 15,
-"x": 827,
-"y": 271,
+"x": 935,
+"y": 274,
 "plugs": [
 {
 "id": 16,
@@ -946,7 +946,122 @@
 "id": 17,
 "type": 3
 }
+],
+"dialog": "D_MARCHANT",
+"sentence": "1"
+},
+{
+"type": 780,
+"id": 18,
+"x": 796,
+"y": 273,
+"plugs": [
+{
+"id": 19,
+"type": 2
+},
+{
+"id": 20,
+"type": 3,
+"trgs": [
+16
 ]
+}
+],
+"puzzle": "#Talk_Trader"
+},
+{
+"type": 1290,
+"id": 21,
+"x": 635,
+"y": 378,
+"plugs": [
+{
+"id": 22,
+"type": 3,
+"trgs": [
+26
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_MARCHANT"
+},
+{
+"type": 1290,
+"id": 23,
+"x": 638,
+"y": 480,
+"plugs": [
+{
+"id": 24,
+"type": 3,
+"trgs": [
+26
+]
+}
+],
+"varCmp": "==",
+"obj": "O_TREASURE",
+"obj2": "O_MARCHANT"
+},
+{
+"type": 260,
+"id": 25,
+"x": 811,
+"y": 378,
+"plugs": [
+{
+"id": 26,
+"type": 2
+},
+{
+"id": 27,
+"type": 3,
+"trgs": [
+32
+]
+}
+]
+},
+{
+"type": 780,
+"id": 28,
+"x": 1051,
+"y": 378,
+"plugs": [
+{
+"id": 29,
+"type": 2
+},
+{
+"id": 30,
+"type": 3
+}
+],
+"puzzle": "#Buy_Spray_Paint"
+},
+{
+"type": 788,
+"id": 31,
+"x": 939,
+"y": 378,
+"plugs": [
+{
+"id": 32,
+"type": 2
+},
+{
+"id": 33,
+"type": 3,
+"trgs": [
+29
+]
+}
+],
+"player": "P_HERO",
+"silent": "False"
 }
 ]
 }
@@ -39731,62 +39846,11 @@
 },
 "sentences": [
 {
-"id": 14,
+"id": 28,
 "choice": true,
 "sentences": [
 {
-"id": 19,
-"text": {
-"en": "Une bombe?"
-},
-"speaker": "O_MARCHANT",
-"sentences": [
-{
-"id": 20,
-"choice": true,
-"text": {
-"en": "- Oui une bombe de peinture."
-},
-"sentences": [
-{
-"id": 22,
-"text": {
-"en": "Ah oui bien sûr !!!"
-},
-"speaker": "O_MARCHANT",
-"onSay": "#Buy_Spray_Paint"
-}
-]
-},
-{
-"id": 21,
-"choice": true,
-"text": {
-"en": "- Oui, c'est pour braquer une banque."
-},
-"sentences": [
-{
-"id": 23,
-"text": {
-"en": "Ah carrément, je suis outré pourtant j'en est vu des détraqués"
-},
-"speaker": "O_MARCHANT"
-}
-]
-}
-]
-}
-],
-"text": {
-"en": "- Une bombe, s'il vous plait."
-}
-},
-{
-"id": 4,
-"choice": true,
-"sentences": [
-{
-"id": 9,
+"id": 29,
 "text": {
 "en": "Ce ne sera pas possible, je ne suis pas patisser, je suis un marchant voyageur."
 },
@@ -39798,11 +39862,83 @@
 }
 },
 {
-"id": 5,
-"choice": true,
+"id": 30,
+"text": {
+"en": "- Une bombe, s'il vous plait."
+},
+"speaker": "O_HERO",
 "sentences": [
 {
-"id": 10,
+"id": 33,
+"text": {
+"en": "Une bombe?"
+},
+"speaker": "O_MARCHANT",
+"sentences": [
+{
+"id": 34,
+"choice": true,
+"text": {
+"en": "- Oui une bombe de peinture."
+},
+"sentences": [
+{
+"id": 35,
+"text": {
+"en": "Ah oui bien sûr !!!\r\nJe vous laisse me donner de quoi payer."
+},
+"speaker": "O_MARCHANT",
+"sentences": [
+{
+"id": 36,
+"text": {
+"en": "Comment ca il faut payer ?"
+},
+"speaker": "O_HERO"
+},
+{
+"id": 37,
+"text": {
+"en": "Ah, je n'ai pas d'argent"
+},
+"speaker": "O_HERO"
+},
+{
+"id": 38,
+"text": {
+"en": "Ok, très bien"
+},
+"speaker": "O_HERO"
+}
+]
+}
+]
+},
+{
+"id": 39,
+"choice": true,
+"text": {
+"en": "- Oui, c'est pour braquer une banque."
+},
+"sentences": [
+{
+"id": 40,
+"text": {
+"en": "Ah carrément, je suis outré pourtant j'en est vu des détraqués comme vous !"
+},
+"speaker": "O_MARCHANT"
+}
+]
+}
+]
+}
+]
+},
+{
+"id": 31,
+"sentences": [
+{
+"id": 32,
 "text": {
 "en": "Je vend de la peinture, de l'alcool, et des drogues.\r\nTout ce qui faut pour faire la fête !!!"
 },
@@ -39811,7 +39947,8 @@
 ],
 "text": {
 "en": "- Que vendez-vous ?"
-}
+},
+"speaker": "O_HERO"
 }
 ],
 "speaker": "O_MARCHANT",
@@ -39819,7 +39956,7 @@
 }
 ]
 },
-"nextID": 24
+"nextID": 41
 }
 }
 ]
