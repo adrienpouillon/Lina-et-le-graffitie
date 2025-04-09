@@ -859,9 +859,9 @@
 "uid": "R_NEIGHBORHOOD",
 "graph": {
 "board": {
-"nextid": 34,
-"x": -401,
-"y": -3,
+"nextid": 60,
+"x": -556,
+"y": -196,
 "boxes": [
 {
 "type": 257,
@@ -980,7 +980,7 @@
 "id": 22,
 "type": 3,
 "trgs": [
-26
+35
 ]
 }
 ],
@@ -991,56 +991,20 @@
 {
 "type": 1290,
 "id": 23,
-"x": 638,
-"y": 480,
+"x": 635,
+"y": 486,
 "plugs": [
 {
 "id": 24,
 "type": 3,
 "trgs": [
-26
+39
 ]
 }
 ],
 "varCmp": "==",
 "obj": "O_TREASURE",
 "obj2": "O_MARCHANT"
-},
-{
-"type": 260,
-"id": 25,
-"x": 811,
-"y": 378,
-"plugs": [
-{
-"id": 26,
-"type": 2
-},
-{
-"id": 27,
-"type": 3,
-"trgs": [
-32
-]
-}
-]
-},
-{
-"type": 780,
-"id": 28,
-"x": 1051,
-"y": 378,
-"plugs": [
-{
-"id": 29,
-"type": 2
-},
-{
-"id": 30,
-"type": 3
-}
-],
-"puzzle": "#Buy_Spray_Paint"
 },
 {
 "type": 788,
@@ -1056,11 +1020,160 @@
 "id": 33,
 "type": 3,
 "trgs": [
-29
+49
 ]
 }
 ],
 "player": "P_HERO",
+"silent": "False"
+},
+{
+"type": 1034,
+"id": 34,
+"x": 781,
+"y": 379,
+"plugs": [
+{
+"id": 35,
+"type": 2
+},
+{
+"id": 36,
+"type": 3
+},
+{
+"id": 37,
+"type": 3,
+"trgs": [
+32
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT"
+},
+{
+"type": 1034,
+"id": 38,
+"x": 782,
+"y": 485,
+"plugs": [
+{
+"id": 39,
+"type": 2
+},
+{
+"id": 40,
+"type": 3
+},
+{
+"id": 41,
+"type": 3,
+"trgs": [
+43
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT"
+},
+{
+"type": 788,
+"id": 42,
+"x": 938,
+"y": 486,
+"plugs": [
+{
+"id": 43,
+"type": 2
+},
+{
+"id": 44,
+"type": 3,
+"trgs": [
+58
+]
+}
+],
+"player": "P_HERO",
+"silent": "False"
+},
+{
+"type": 788,
+"id": 48,
+"x": 1040,
+"y": 380,
+"plugs": [
+{
+"id": 49,
+"type": 2
+},
+{
+"id": 50,
+"type": 3,
+"trgs": [
+55
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 51,
+"x": 1178,
+"y": 487,
+"plugs": [
+{
+"id": 52,
+"type": 2
+},
+{
+"id": 53,
+"type": 3
+}
+],
+"puzzle": "#Buy_Spray_Paint"
+},
+{
+"type": 780,
+"id": 54,
+"x": 1189,
+"y": 380,
+"plugs": [
+{
+"id": 55,
+"type": 2
+},
+{
+"id": 56,
+"type": 3
+}
+],
+"puzzle": "#Buy_Spray_Paint"
+},
+{
+"type": 788,
+"id": 57,
+"x": 1025,
+"y": 486,
+"plugs": [
+{
+"id": 58,
+"type": 2
+},
+{
+"id": 59,
+"type": 3,
+"trgs": [
+52
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT",
 "silent": "False"
 }
 ]
@@ -39754,6 +39867,159 @@
 }
 ]
 }
+},
+{
+"object": {
+"bbox": true,
+"maxScale": -1,
+"width": 16,
+"height": 16
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "496f4fbaa7b06787743308158d97eddf",
+"wtrim": 16,
+"htrim": 16,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 20,
+"hdraw": 20
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "496f4fbaa7b06787743308158d97eddf",
+"wtrim": 16,
+"htrim": 16,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 20,
+"hdraw": 20
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 29,
+"uid": "O_SRAY_PAINT",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 16,
+"h": 16
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
 }
 ],
 "players": [
@@ -39768,7 +40034,7 @@
 }
 ],
 "meta": {
-"nextAssetID": 29
+"nextAssetID": 30
 },
 "dialogs": [
 {
@@ -39862,49 +40128,46 @@
 }
 },
 {
-"id": 30,
-"text": {
-"en": "- Une bombe, s'il vous plait."
-},
-"speaker": "O_HERO",
+"id": 41,
+"choice": true,
 "sentences": [
 {
-"id": 33,
+"id": 43,
 "text": {
 "en": "Une bombe?"
 },
 "speaker": "O_MARCHANT",
 "sentences": [
 {
-"id": 34,
+"id": 44,
 "choice": true,
 "text": {
 "en": "- Oui une bombe de peinture."
 },
 "sentences": [
 {
-"id": 35,
+"id": 45,
 "text": {
 "en": "Ah oui bien sûr !!!\r\nJe vous laisse me donner de quoi payer."
 },
 "speaker": "O_MARCHANT",
 "sentences": [
 {
-"id": 36,
+"id": 46,
 "text": {
 "en": "Comment ca il faut payer ?"
 },
 "speaker": "O_HERO"
 },
 {
-"id": 37,
+"id": 47,
 "text": {
 "en": "Ah, je n'ai pas d'argent"
 },
 "speaker": "O_HERO"
 },
 {
-"id": 38,
+"id": 48,
 "text": {
 "en": "Ok, très bien"
 },
@@ -39915,14 +40178,14 @@
 ]
 },
 {
-"id": 39,
+"id": 49,
 "choice": true,
 "text": {
 "en": "- Oui, c'est pour braquer une banque."
 },
 "sentences": [
 {
-"id": 40,
+"id": 50,
 "text": {
 "en": "Ah carrément, je suis outré pourtant j'en est vu des détraqués comme vous !"
 },
@@ -39932,13 +40195,17 @@
 }
 ]
 }
-]
+],
+"text": {
+"en": "- Une bombe, s'il vous plait."
+}
 },
 {
-"id": 31,
+"id": 42,
+"choice": true,
 "sentences": [
 {
-"id": 32,
+"id": 51,
 "text": {
 "en": "Je vend de la peinture, de l'alcool, et des drogues.\r\nTout ce qui faut pour faire la fête !!!"
 },
@@ -39947,8 +40214,7 @@
 ],
 "text": {
 "en": "- Que vendez-vous ?"
-},
-"speaker": "O_HERO"
+}
 }
 ],
 "speaker": "O_MARCHANT",
@@ -39956,7 +40222,7 @@
 }
 ]
 },
-"nextID": 41
+"nextID": 52
 }
 }
 ]
