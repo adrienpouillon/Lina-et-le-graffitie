@@ -1,1 +1,5 @@
 New Game
+success ok #20
+success ok #17
+success ok #32
+success ok #26

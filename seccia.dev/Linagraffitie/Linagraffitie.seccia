@@ -883,9 +883,9 @@
 "uid": "R_NEIGHBORHOOD",
 "graph": {
 "board": {
-"nextid": 83,
-"x": -368,
-"y": -35,
+"nextid": 86,
+"x": -525,
+"y": -245,
 "boxes": [
 {
 "type": 257,
@@ -1002,10 +1002,7 @@
 "plugs": [
 {
 "id": 24,
-"type": 3,
-"trgs": [
-78
-]
+"type": 3
 }
 ],
 "varCmp": "==",
@@ -1109,60 +1106,22 @@
 "puzzle": "#Want_Spray_Paint"
 },
 {
-"type": 260,
-"id": 66,
-"x": 703,
-"y": 426,
-"plugs": [
-{
-"id": 67,
-"type": 2
-},
-{
-"id": 68,
-"type": 3,
-"trgs": [
-61
-]
-}
-]
-},
-{
 "type": 1290,
 "id": 69,
-"x": 415,
-"y": 418,
+"x": 648,
+"y": 476,
 "plugs": [
 {
 "id": 70,
 "type": 3,
 "trgs": [
-81
+61
 ]
 }
 ],
 "varCmp": "==",
 "obj": "O_COIN",
 "obj2": "O_TRADER"
-},
-{
-"type": 260,
-"id": 71,
-"x": 700,
-"y": 532,
-"plugs": [
-{
-"id": 72,
-"type": 2
-},
-{
-"id": 73,
-"type": 3,
-"trgs": [
-61
-]
-}
-]
 },
 {
 "type": 781,
@@ -1179,48 +1138,6 @@
 "type": 3,
 "trgs": [
 55
-]
-}
-],
-"dialog": "D_MARCHANT",
-"sentence": "55"
-},
-{
-"type": 781,
-"id": 77,
-"x": 508,
-"y": 645,
-"plugs": [
-{
-"id": 78,
-"type": 2
-},
-{
-"id": 79,
-"type": 3,
-"trgs": [
-72
-]
-}
-],
-"dialog": "D_MARCHANT",
-"sentence": "55"
-},
-{
-"type": 781,
-"id": 80,
-"x": 498,
-"y": 342,
-"plugs": [
-{
-"id": 81,
-"type": 2
-},
-{
-"id": 82,
-"type": 3,
-"trgs": [
-67
 ]
 }
 ],
@@ -1583,9 +1500,9 @@
 },
 "nextID": 7,
 "role": "R_CITY",
-"zoom": 30,
-"x": -159,
-"y": -4
+"zoom": 100,
+"x": 1385,
+"y": 490
 },
 "objects": [
 {
@@ -1624,10 +1541,6 @@
 "row": 43
 },
 {
-"col": 93,
-"row": 43
-},
-{
 "col": 88,
 "row": 42
 },
@@ -1766,10 +1679,6 @@
 {
 "col": 92,
 "row": 47
-},
-{
-"col": 93,
-"row": 44
 },
 {
 "col": 93,
@@ -8867,10 +8776,6 @@
 },
 {
 "col": 92,
-"row": 41
-},
-{
-"col": 93,
 "row": 41,
 "linkSelDoor": {
 "door": "DOOR_ABANDONNED_STREET"
@@ -8882,6 +8787,14 @@
 },
 {
 "col": 91,
+"row": 41
+},
+{
+"col": 93,
+"row": 42
+},
+{
+"col": 93,
 "row": 41
 }
 ]
@@ -9062,9 +8975,9 @@
 },
 "nextID": 6,
 "role": "R_TOWN",
-"zoom": 35,
-"x": -92,
-"y": 59
+"zoom": 75,
+"x": 410,
+"y": 419
 },
 "objects": [
 {
@@ -9088,8 +9001,8 @@
 "",
 ""
 ],
-"x": 920,
-"y": 760,
+"x": 970,
+"y": 733,
 "parallax": 100,
 "lightAmbient": 255,
 "lightDiffuse": 16777215,
@@ -9124,18 +9037,6 @@
 },
 {
 "col": 58,
-"row": 47
-},
-{
-"col": 58,
-"row": 48
-},
-{
-"col": 58,
-"row": 49
-},
-{
-"col": 59,
 "row": 48
 },
 {
@@ -9557,14 +9458,6 @@
 {
 "col": 59,
 "row": 51
-},
-{
-"col": 60,
-"row": 48
-},
-{
-"col": 60,
-"row": 49
 },
 {
 "col": 60,
@@ -16271,8 +16164,47 @@
 "row": 50
 },
 {
+"col": 57,
+"row": 46
+},
+{
+"col": 58,
+"row": 46
+},
+{
 "col": 59,
-"row": 49
+"row": 46
+},
+{
+"col": 59,
+"row": 47
+},
+{
+"col": 60,
+"row": 46,
+"linkSelDoor": {
+"door": "DOOR_CITY"
+}
+},
+{
+"col": 60,
+"row": 45
+},
+{
+"col": 59,
+"row": 45
+},
+{
+"col": 61,
+"row": 46
+},
+{
+"col": 61,
+"row": 45
+},
+{
+"col": 58,
+"row": 47
 }
 ]
 },
@@ -24427,8 +24359,8 @@
 "nextID": 24,
 "role": "R_ABANDONNED_STREET",
 "zoom": 30,
-"x": -80,
-"y": 7
+"x": -76,
+"y": 53
 },
 "objects": [
 {
@@ -24440,7 +24372,7 @@
 "b": 100
 },
 {
-"y": 848,
+"y": 1088,
 "a": 400,
 "b": 100
 }
@@ -34451,42 +34383,6 @@
 ]
 },
 {
-"uid": "O_ROAD",
-"id": 17,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1077,
-"parallax": 100,
-"lightAmbient": 255,
-"lightDiffuse": 16777215,
-"lightAngle": 30,
-"lightDist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
 "uid": "O_WALL",
 "id": 18,
 "tags": [
@@ -34840,8 +34736,8 @@
 "nextID": 18,
 "role": "R_ABANDONNED_STREET_EMPTY",
 "zoom": 33,
-"x": -88,
-"y": 54
+"x": -31,
+"y": 138
 },
 "objects": [
 {
@@ -34853,7 +34749,7 @@
 "b": 100
 },
 {
-"y": 848,
+"y": 1088,
 "a": 400,
 "b": 100
 }
@@ -48138,8 +48034,8 @@
 "nextID": 15,
 "role": "R_ABANDONNED_STREET_FULL",
 "zoom": 33,
-"x": -139,
-"y": 60
+"x": -248,
+"y": 96
 },
 "objects": [
 {
@@ -48151,7 +48047,7 @@
 "b": 100
 },
 {
-"y": 848,
+"y": 1072,
 "a": 400,
 "b": 100
 }
@@ -60647,6 +60543,81 @@
 }
 ]
 }
+},
+{
+"object": {
+"maxScale": -1,
+"width": 1920,
+"height": 1080,
+"disabled": true,
+"x": 1080,
+"y": -3
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "3a939c80b55543c152c249fb27baf55c",
+"ytrim": 844,
+"wtrim": 1920,
+"htrim": 236,
+"xdraw": -2,
+"ydraw": 842,
+"wdraw": 1924,
+"hdraw": 240
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 36,
+"uid": "O_ROAD_STREET_FULL",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 1920,
+"h": 236
+}
+],
+"packs": [
+{
+"count": 1
+}
+]
+}
 }
 ],
 "players": [
@@ -60661,7 +60632,7 @@
 }
 ],
 "meta": {
-"nextAssetID": 36
+"nextAssetID": 37
 },
 "dialogs": [
 {
@@ -60747,7 +60718,8 @@
 "text": {
 "en": "Ce ne sera pas possible, je ne suis pas patisser, je suis un marchant voyageur."
 },
-"speaker": "O_TRADER"
+"speaker": "O_TRADER",
+"exit": true
 }
 ],
 "text": {
@@ -60784,21 +60756,24 @@
 "choice": true,
 "text": {
 "en": "Comment ca il faut payer ?"
-}
+},
+"exit": true
 },
 {
 "id": 53,
 "choice": true,
 "text": {
 "en": "Ah, je n'ai pas d'argent"
-}
+},
+"exit": true
 },
 {
 "id": 54,
 "choice": true,
 "text": {
 "en": "Ok, très bien"
-}
+},
+"exit": true
 }
 ],
 "onSay": "#Want_Spray_Paint"
@@ -60817,7 +60792,8 @@
 "text": {
 "en": "Ah carrément, je suis outré pourtant j'en est vu des détraqués comme vous !"
 },
-"speaker": "O_TRADER"
+"speaker": "O_TRADER",
+"exit": true
 }
 ]
 }
