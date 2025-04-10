@@ -1,1 +1,8 @@
 New Game
+success ok #20
+success ok #17
+success ok #32
+success ok #23
+success failed (box not started) #26
+success failed (box not started) #29
+success failed (box not started) #41
