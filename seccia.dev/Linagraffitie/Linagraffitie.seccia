@@ -129,8 +129,8 @@
 },
 "scenario": {
 "board": {
-"nextid": 35,
-"x": 509,
+"nextid": 44,
+"x": 362,
 "boxes": [
 {
 "type": 257,
@@ -144,9 +144,10 @@
 "type": 3,
 "trgs": [
 24,
-21,
 15,
-18
+18,
+39,
+21
 ]
 }
 ],
@@ -156,7 +157,7 @@
 "type": 260,
 "id": 3,
 "name": "end",
-"x": 728,
+"x": 920,
 "y": 136,
 "plugs": [
 {
@@ -169,8 +170,8 @@
 "type": 261,
 "id": 8,
 "name": "or",
-"x": 216,
-"y": 296,
+"x": 320,
+"y": 360,
 "plugs": [
 {
 "id": 9,
@@ -252,7 +253,7 @@
 "id": 22,
 "type": 3,
 "trgs": [
-9
+42
 ]
 }
 ]
@@ -261,8 +262,8 @@
 "type": 256,
 "id": 23,
 "name": "#Find_Treasure",
-"x": 40,
-"y": 344,
+"x": 184,
+"y": 448,
 "plugs": [
 {
 "id": 24,
@@ -281,7 +282,7 @@
 "type": 256,
 "id": 26,
 "name": "#Buy_Spray_Paint",
-"x": 368,
+"x": 456,
 "y": 208,
 "plugs": [
 {
@@ -301,7 +302,7 @@
 "type": 256,
 "id": 29,
 "name": "#Paint_Wall",
-"x": 536,
+"x": 640,
 "y": 136,
 "plugs": [
 {
@@ -312,7 +313,7 @@
 "id": 31,
 "type": 3,
 "trgs": [
-4
+36
 ]
 }
 ]
@@ -336,6 +337,66 @@
 ]
 }
 ]
+},
+{
+"type": 256,
+"id": 35,
+"name": "#End",
+"x": 792,
+"y": 136,
+"plugs": [
+{
+"id": 36,
+"type": 2
+},
+{
+"id": 37,
+"type": 3,
+"trgs": [
+4
+]
+}
+]
+},
+{
+"type": 256,
+"id": 38,
+"name": "#Remenber_Coin2",
+"x": 24,
+"y": 336,
+"plugs": [
+{
+"id": 39,
+"type": 2
+},
+{
+"id": 40,
+"type": 3,
+"trgs": [
+42
+]
+}
+]
+},
+{
+"type": 256,
+"id": 41,
+"name": "#Have_Billet",
+"x": 200,
+"y": 304,
+"plugs": [
+{
+"id": 42,
+"type": 2
+},
+{
+"id": 43,
+"type": 3,
+"trgs": [
+9
+]
+}
+]
 }
 ]
 }
@@ -346,15 +407,15 @@
 "uid": "R_ABANDONNED_STREET",
 "graph": {
 "board": {
-"nextid": 26,
-"x": -317,
-"y": -110,
+"nextid": 55,
+"x": -279,
+"y": -143,
 "boxes": [
 {
 "type": 257,
 "id": 1,
-"x": 347,
-"y": 295,
+"x": 424,
+"y": 474,
 "plugs": [
 {
 "id": 2,
@@ -450,26 +511,76 @@
 "id": 14,
 "type": 3,
 "trgs": [
-16
+27
 ]
 }
 ],
 "varCmp": "==",
 "scene": "S_ABANDONNED_STREET",
-"obj": "O_WALL2"
+"obj": "O_WALL_STREET2"
 },
 {
-"type": 781,
-"id": 15,
-"x": 677,
+"type": 1287,
+"id": 18,
+"x": 412,
+"y": 535,
+"plugs": [
+{
+"id": 19,
+"type": 3,
+"trgs": [
+39
+]
+}
+],
+"varCmp": "==",
+"scene": "S_ABANDONNED_STREET",
+"obj": "O_BOX_STREET"
+},
+{
+"type": 1031,
+"id": 26,
+"x": 616,
 "y": 400,
 "plugs": [
 {
-"id": 16,
+"id": 27,
 "type": 2
 },
 {
-"id": 17,
+"id": 28,
+"type": 3
+},
+{
+"id": 29,
+"type": 3
+},
+{
+"id": 30,
+"type": 3,
+"trgs": [
+33
+]
+},
+{
+"id": 31,
+"type": 3
+}
+],
+"puzzle": "#Find_Wall"
+},
+{
+"type": 781,
+"id": 32,
+"x": 756,
+"y": 400,
+"plugs": [
+{
+"id": 33,
+"type": 2
+},
+{
+"id": 34,
 "type": 3
 }
 ],
@@ -477,40 +588,133 @@
 "sentence": "6"
 },
 {
-"type": 1287,
-"id": 18,
-"x": 411,
-"y": 511,
-"plugs": [
-{
-"id": 19,
-"type": 3,
-"trgs": [
-21
-]
-}
-],
-"varCmp": "==",
-"scene": "S_ABANDONNED_STREET",
-"obj": "O_BOX"
-},
-{
 "type": 781,
-"id": 20,
-"x": 675,
-"y": 512,
+"id": 35,
+"x": 756,
+"y": 534,
 "plugs": [
 {
-"id": 21,
+"id": 36,
 "type": 2
 },
 {
-"id": 22,
+"id": 37,
 "type": 3
 }
 ],
 "dialog": "D_HERO",
 "sentence": "7"
+},
+{
+"type": 1031,
+"id": 38,
+"x": 618,
+"y": 536,
+"plugs": [
+{
+"id": 39,
+"type": 2
+},
+{
+"id": 40,
+"type": 3
+},
+{
+"id": 41,
+"type": 3
+},
+{
+"id": 42,
+"type": 3,
+"trgs": [
+36
+]
+},
+{
+"id": 43,
+"type": 3
+}
+],
+"puzzle": "#Find_Wall"
+},
+{
+"type": 1290,
+"id": 44,
+"x": 409,
+"y": 692,
+"plugs": [
+{
+"id": 45,
+"type": 3,
+"trgs": [
+47
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_COIN2"
+},
+{
+"type": 781,
+"id": 46,
+"x": 537,
+"y": 693,
+"plugs": [
+{
+"id": 47,
+"type": 2
+},
+{
+"id": 48,
+"type": 3,
+"trgs": [
+50
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "11"
+},
+{
+"type": 788,
+"id": 49,
+"x": 721,
+"y": 694,
+"plugs": [
+{
+"id": 50,
+"type": 2
+},
+{
+"id": 51,
+"type": 3,
+"trgs": [
+53
+]
+}
+],
+"script": "dump O_COIN\r\ndump O_COIN2",
+"player": "P_HERO",
+"obj": "O_BILLET",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 52,
+"x": 849,
+"y": 694,
+"plugs": [
+{
+"id": 53,
+"type": 2
+},
+{
+"id": 54,
+"type": 3
+}
+],
+"puzzle": "#Have_Billet"
 }
 ]
 }
@@ -521,15 +725,15 @@
 "uid": "R_CITY",
 "graph": {
 "board": {
-"nextid": 24,
-"x": -243,
-"y": -5,
+"nextid": 35,
+"x": -322,
+"y": -3,
 "boxes": [
 {
 "type": 257,
 "id": 1,
-"x": 220,
-"y": 270,
+"x": 384,
+"y": 265,
 "plugs": [
 {
 "id": 2,
@@ -692,6 +896,85 @@
 }
 ],
 "puzzle": "#Remenber_Coin"
+},
+{
+"type": 1290,
+"id": 24,
+"x": 386,
+"y": 420,
+"plugs": [
+{
+"id": 25,
+"type": 3,
+"trgs": [
+27
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_COIN2"
+},
+{
+"type": 781,
+"id": 26,
+"x": 514,
+"y": 421,
+"plugs": [
+{
+"id": 27,
+"type": 2
+},
+{
+"id": 28,
+"type": 3,
+"trgs": [
+30
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "11"
+},
+{
+"type": 788,
+"id": 29,
+"x": 698,
+"y": 422,
+"plugs": [
+{
+"id": 30,
+"type": 2
+},
+{
+"id": 31,
+"type": 3,
+"trgs": [
+33
+]
+}
+],
+"script": "dump O_COIN\r\ndump O_COIN2",
+"player": "P_HERO",
+"obj": "O_BILLET",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 32,
+"x": 822,
+"y": 423,
+"plugs": [
+{
+"id": 33,
+"type": 2
+},
+{
+"id": 34,
+"type": 3
+}
+],
+"puzzle": "#Have_Billet"
 }
 ]
 }
@@ -702,15 +985,15 @@
 "uid": "R_TOWN",
 "graph": {
 "board": {
-"nextid": 33,
-"x": -326,
-"y": -183,
+"nextid": 44,
+"x": -350,
+"y": -138,
 "boxes": [
 {
 "type": 257,
 "id": 1,
-"x": 220,
-"y": 270,
+"x": 449,
+"y": 280,
 "plugs": [
 {
 "id": 2,
@@ -780,7 +1063,7 @@
 "type": 775,
 "id": 10,
 "x": 707,
-"y": 431,
+"y": 433,
 "plugs": [
 {
 "id": 11,
@@ -873,6 +1156,85 @@
 "player": "P_HERO",
 "obj": "O_TREASURE",
 "silent": "False"
+},
+{
+"type": 1290,
+"id": 33,
+"x": 436,
+"y": 638,
+"plugs": [
+{
+"id": 34,
+"type": 3,
+"trgs": [
+36
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_COIN2"
+},
+{
+"type": 781,
+"id": 35,
+"x": 564,
+"y": 639,
+"plugs": [
+{
+"id": 36,
+"type": 2
+},
+{
+"id": 37,
+"type": 3,
+"trgs": [
+39
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "11"
+},
+{
+"type": 788,
+"id": 38,
+"x": 748,
+"y": 640,
+"plugs": [
+{
+"id": 39,
+"type": 2
+},
+{
+"id": 40,
+"type": 3,
+"trgs": [
+42
+]
+}
+],
+"script": "dump O_COIN\r\ndump O_COIN2",
+"player": "P_HERO",
+"obj": "O_BILLET",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 41,
+"x": 864,
+"y": 640,
+"plugs": [
+{
+"id": 42,
+"type": 2
+},
+{
+"id": 43,
+"type": 3
+}
+],
+"puzzle": "#Have_Billet"
 }
 ]
 }
@@ -883,15 +1245,15 @@
 "uid": "R_NEIGHBORHOOD",
 "graph": {
 "board": {
-"nextid": 86,
-"x": -525,
-"y": -245,
+"nextid": 167,
+"x": -546,
+"y": -207,
 "boxes": [
 {
 "type": 257,
 "id": 1,
-"x": 493,
-"y": 220,
+"x": 662,
+"y": 231,
 "plugs": [
 {
 "id": 2,
@@ -902,8 +1264,8 @@
 {
 "type": 1283,
 "id": 8,
-"x": 629,
-"y": 111,
+"x": 646,
+"y": 282,
 "plugs": [
 {
 "id": 9,
@@ -921,8 +1283,8 @@
 {
 "type": 775,
 "id": 10,
-"x": 875,
-"y": 109,
+"x": 873,
+"y": 282,
 "plugs": [
 {
 "id": 11,
@@ -941,8 +1303,8 @@
 {
 "type": 1287,
 "id": 13,
-"x": 633,
-"y": 272,
+"x": 648,
+"y": 381,
 "plugs": [
 {
 "id": 14,
@@ -959,8 +1321,8 @@
 {
 "type": 781,
 "id": 15,
-"x": 935,
-"y": 274,
+"x": 950,
+"y": 383,
 "plugs": [
 {
 "id": 16,
@@ -977,8 +1339,8 @@
 {
 "type": 780,
 "id": 18,
-"x": 796,
-"y": 273,
+"x": 811,
+"y": 382,
 "plugs": [
 {
 "id": 19,
@@ -997,12 +1359,15 @@
 {
 "type": 1290,
 "id": 23,
-"x": 420,
-"y": 531,
+"x": 636,
+"y": 963,
 "plugs": [
 {
 "id": 24,
-"type": 3
+"type": 3,
+"trgs": [
+97
+]
 }
 ],
 "varCmp": "==",
@@ -1012,8 +1377,8 @@
 {
 "type": 1034,
 "id": 34,
-"x": 991,
-"y": 475,
+"x": 982,
+"y": 799,
 "plugs": [
 {
 "id": 35,
@@ -1037,8 +1402,8 @@
 {
 "type": 788,
 "id": 48,
-"x": 1132,
-"y": 497,
+"x": 1123,
+"y": 821,
 "plugs": [
 {
 "id": 49,
@@ -1052,6 +1417,7 @@
 ]
 }
 ],
+"script": "dump O_BILLET",
 "player": "P_HERO",
 "obj": "O_SRAY_PAINT",
 "silent": "False"
@@ -1059,8 +1425,8 @@
 {
 "type": 780,
 "id": 54,
-"x": 1557,
-"y": 500,
+"x": 1550,
+"y": 823,
 "plugs": [
 {
 "id": 55,
@@ -1076,8 +1442,8 @@
 {
 "type": 1031,
 "id": 60,
-"x": 823,
-"y": 476,
+"x": 814,
+"y": 800,
 "plugs": [
 {
 "id": 61,
@@ -1108,8 +1474,8 @@
 {
 "type": 1290,
 "id": 69,
-"x": 648,
-"y": 476,
+"x": 639,
+"y": 800,
 "plugs": [
 {
 "id": 70,
@@ -1120,14 +1486,14 @@
 }
 ],
 "varCmp": "==",
-"obj": "O_COIN",
+"obj": "O_BILLET",
 "obj2": "O_TRADER"
 },
 {
 "type": 781,
 "id": 74,
-"x": 1286,
-"y": 498,
+"x": 1277,
+"y": 822,
 "plugs": [
 {
 "id": 75,
@@ -1143,6 +1509,389 @@
 ],
 "dialog": "D_MARCHANT",
 "sentence": "55"
+},
+{
+"type": 1034,
+"id": 86,
+"x": 984,
+"y": 962,
+"plugs": [
+{
+"id": 87,
+"type": 2
+},
+{
+"id": 88,
+"type": 3
+},
+{
+"id": 89,
+"type": 3,
+"trgs": [
+91
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT"
+},
+{
+"type": 788,
+"id": 90,
+"x": 1125,
+"y": 984,
+"plugs": [
+{
+"id": 91,
+"type": 2
+},
+{
+"id": 92,
+"type": 3,
+"trgs": [
+103
+]
+}
+],
+"script": "dump O_TREASURE",
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 93,
+"x": 1562,
+"y": 985,
+"plugs": [
+{
+"id": 94,
+"type": 2
+},
+{
+"id": 95,
+"type": 3
+}
+],
+"puzzle": "#Buy_Spray_Paint"
+},
+{
+"type": 1031,
+"id": 96,
+"x": 816,
+"y": 963,
+"plugs": [
+{
+"id": 97,
+"type": 2
+},
+{
+"id": 98,
+"type": 3,
+"trgs": [
+87
+]
+},
+{
+"id": 99,
+"type": 3
+},
+{
+"id": 100,
+"type": 3
+},
+{
+"id": 101,
+"type": 3
+}
+],
+"puzzle": "#Want_Spray_Paint"
+},
+{
+"type": 781,
+"id": 102,
+"x": 1279,
+"y": 985,
+"plugs": [
+{
+"id": 103,
+"type": 2
+},
+{
+"id": 104,
+"type": 3,
+"trgs": [
+94
+]
+}
+],
+"dialog": "D_MARCHANT",
+"sentence": "55"
+},
+{
+"type": 1290,
+"id": 111,
+"x": 632,
+"y": 1131,
+"plugs": [
+{
+"id": 112,
+"type": 3,
+"trgs": [
+114
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_COIN2"
+},
+{
+"type": 781,
+"id": 113,
+"x": 760,
+"y": 1132,
+"plugs": [
+{
+"id": 114,
+"type": 2
+},
+{
+"id": 115,
+"type": 3,
+"trgs": [
+117
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "11"
+},
+{
+"type": 788,
+"id": 116,
+"x": 944,
+"y": 1133,
+"plugs": [
+{
+"id": 117,
+"type": 2
+},
+{
+"id": 118,
+"type": 3,
+"trgs": [
+165
+]
+}
+],
+"script": "dump O_COIN\r\ndump O_COIN2",
+"player": "P_HERO",
+"obj": "O_BILLET",
+"silent": "False"
+},
+{
+"type": 1034,
+"id": 119,
+"x": 985,
+"y": 468,
+"plugs": [
+{
+"id": 120,
+"type": 2
+},
+{
+"id": 121,
+"type": 3
+},
+{
+"id": 122,
+"type": 3,
+"trgs": [
+138
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT"
+},
+{
+"type": 1031,
+"id": 129,
+"x": 817,
+"y": 469,
+"plugs": [
+{
+"id": 130,
+"type": 2
+},
+{
+"id": 131,
+"type": 3,
+"trgs": [
+120
+]
+},
+{
+"id": 132,
+"type": 3
+},
+{
+"id": 133,
+"type": 3
+},
+{
+"id": 134,
+"type": 3
+}
+],
+"puzzle": "#Want_Spray_Paint"
+},
+{
+"type": 1290,
+"id": 135,
+"x": 642,
+"y": 469,
+"plugs": [
+{
+"id": 136,
+"type": 3,
+"trgs": [
+130
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_TRADER"
+},
+{
+"type": 781,
+"id": 137,
+"x": 1134,
+"y": 489,
+"plugs": [
+{
+"id": 138,
+"type": 2
+},
+{
+"id": 139,
+"type": 3
+}
+],
+"dialog": "D_MARCHANT",
+"sentence": "56"
+},
+{
+"type": 1034,
+"id": 140,
+"x": 987,
+"y": 629,
+"plugs": [
+{
+"id": 141,
+"type": 2
+},
+{
+"id": 142,
+"type": 3
+},
+{
+"id": 143,
+"type": 3,
+"trgs": [
+159
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_SRAY_PAINT"
+},
+{
+"type": 1031,
+"id": 150,
+"x": 819,
+"y": 630,
+"plugs": [
+{
+"id": 151,
+"type": 2
+},
+{
+"id": 152,
+"type": 3,
+"trgs": [
+141
+]
+},
+{
+"id": 153,
+"type": 3
+},
+{
+"id": 154,
+"type": 3
+},
+{
+"id": 155,
+"type": 3
+}
+],
+"puzzle": "#Want_Spray_Paint"
+},
+{
+"type": 1290,
+"id": 156,
+"x": 644,
+"y": 630,
+"plugs": [
+{
+"id": 157,
+"type": 3,
+"trgs": [
+151
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN2",
+"obj2": "O_TRADER"
+},
+{
+"type": 781,
+"id": 158,
+"x": 1149,
+"y": 650,
+"plugs": [
+{
+"id": 159,
+"type": 2
+},
+{
+"id": 160,
+"type": 3
+}
+],
+"dialog": "D_MARCHANT",
+"sentence": "56"
+},
+{
+"type": 780,
+"id": 164,
+"x": 1060,
+"y": 1133,
+"plugs": [
+{
+"id": 165,
+"type": 2
+},
+{
+"id": 166,
+"type": 3
+}
+],
+"puzzle": "#Have_Billet"
 }
 ]
 }
@@ -1153,15 +1902,15 @@
 "uid": "R_ABANDONNED_STREET_EMPTY",
 "graph": {
 "board": {
-"nextid": 43,
-"x": -292,
-"y": -91,
+"nextid": 166,
+"x": -208,
+"y": -278,
 "boxes": [
 {
 "type": 257,
 "id": 1,
-"x": 311,
-"y": 198,
+"x": 309,
+"y": 537,
 "plugs": [
 {
 "id": 2,
@@ -1173,7 +1922,7 @@
 "type": 1283,
 "id": 3,
 "x": 305,
-"y": 310,
+"y": 348,
 "plugs": [
 {
 "id": 4,
@@ -1192,7 +1941,7 @@
 "type": 775,
 "id": 5,
 "x": 571,
-"y": 308,
+"y": 346,
 "plugs": [
 {
 "id": 6,
@@ -1212,32 +1961,87 @@
 "type": 1287,
 "id": 13,
 "x": 304,
-"y": 405,
+"y": 443,
 "plugs": [
 {
 "id": 14,
 "type": 3,
 "trgs": [
-19
+44
 ]
 }
 ],
 "varCmp": "==",
 "scene": "S_ABANDONNED_STREET_EMPTY",
-"obj": "O_FLOOR"
+"obj": "O_WALL_STREET_EMPTY"
 },
 {
-"type": 781,
-"id": 18,
-"x": 557,
-"y": 405,
+"type": 780,
+"id": 37,
+"x": 900,
+"y": 588,
 "plugs": [
 {
-"id": 19,
+"id": 38,
 "type": 2
 },
 {
-"id": 20,
+"id": 39,
+"type": 3,
+"trgs": [
+152
+]
+}
+],
+"puzzle": "#Find_Wall"
+},
+{
+"type": 1031,
+"id": 43,
+"x": 539,
+"y": 444,
+"plugs": [
+{
+"id": 44,
+"type": 2
+},
+{
+"id": 45,
+"type": 3,
+"trgs": [
+143
+]
+},
+{
+"id": 46,
+"type": 3
+},
+{
+"id": 47,
+"type": 3,
+"trgs": [
+56
+]
+},
+{
+"id": 48,
+"type": 3
+}
+],
+"puzzle": "#Find_Wall"
+},
+{
+"type": 781,
+"id": 55,
+"x": 666,
+"y": 589,
+"plugs": [
+{
+"id": 56,
+"type": 2
+},
+{
+"id": 57,
 "type": 3,
 "trgs": [
 38
@@ -1248,73 +2052,459 @@
 "sentence": "5"
 },
 {
-"type": 1031,
-"id": 28,
-"x": 919,
-"y": 404,
+"type": 1290,
+"id": 67,
+"x": 303,
+"y": 601,
 "plugs": [
 {
-"id": 29,
-"type": 2
-},
-{
-"id": 30,
+"id": 68,
 "type": 3,
 "trgs": [
-35
+88
 ]
-},
-{
-"id": 31,
-"type": 3
-},
-{
-"id": 32,
-"type": 3
-},
-{
-"id": 33,
-"type": 3
 }
 ],
-"puzzle": "#Buy_Spray_Paint"
+"script": "dump O_SRAY_PAINT",
+"varCmp": "==",
+"obj": "O_WALL_STREET_EMPTY",
+"obj2": "O_SRAY_PAINT"
 },
 {
 "type": 780,
-"id": 34,
-"x": 1064,
-"y": 279,
+"id": 87,
+"x": 545,
+"y": 600,
 "plugs": [
 {
-"id": 35,
+"id": 88,
 "type": 2
 },
 {
-"id": 36,
+"id": 89,
 "type": 3
 }
 ],
 "puzzle": "#Paint_Wall"
 },
 {
-"type": 780,
-"id": 37,
-"x": 794,
-"y": 405,
+"type": 786,
+"id": 90,
+"x": 553,
+"y": 710,
 "plugs": [
 {
-"id": 38,
+"id": 91,
 "type": 2
 },
 {
-"id": 39,
+"id": 92,
 "type": 3,
 "trgs": [
-29
+94
 ]
 }
 ],
-"puzzle": "#Find_Wall"
+"visible": "True",
+"duration": "0",
+"scene": "S_ABANDONNED_STREET_EMPTY",
+"obj": "O_TAGZ_HERO"
+},
+{
+"type": 786,
+"id": 93,
+"x": 799,
+"y": 710,
+"plugs": [
+{
+"id": 94,
+"type": 2
+},
+{
+"id": 95,
+"type": 3,
+"trgs": [
+102
+]
+}
+],
+"visible": "True",
+"duration": "0",
+"scene": "S_ABANDONNED_STREET_EMPTY",
+"obj": "O_TAGZ_HERO2"
+},
+{
+"type": 261,
+"id": 99,
+"x": 307,
+"y": 743,
+"plugs": [
+{
+"id": 100,
+"type": 3,
+"trgs": [
+105
+]
+}
+]
+},
+{
+"type": 771,
+"id": 101,
+"x": 1039,
+"y": 711,
+"plugs": [
+{
+"id": 102,
+"type": 2
+},
+{
+"id": 103,
+"type": 3,
+"trgs": [
+111
+]
+}
+],
+"duration": "1000"
+},
+{
+"type": 1031,
+"id": 104,
+"x": 410,
+"y": 744,
+"plugs": [
+{
+"id": 105,
+"type": 2
+},
+{
+"id": 106,
+"type": 3,
+"trgs": [
+91,
+117
+]
+},
+{
+"id": 107,
+"type": 3
+},
+{
+"id": 108,
+"type": 3,
+"trgs": [
+120
+]
+},
+{
+"id": 109,
+"type": 3
+}
+],
+"puzzle": "#Paint_Wall"
+},
+{
+"type": 786,
+"id": 110,
+"x": 1150,
+"y": 712,
+"plugs": [
+{
+"id": 111,
+"type": 2
+},
+{
+"id": 112,
+"type": 3
+}
+],
+"visible": "True",
+"duration": "0",
+"scene": "S_ABANDONNED_STREET_EMPTY",
+"obj": "O_TAGZ_HERO3"
+},
+{
+"type": 780,
+"id": 113,
+"x": 669,
+"y": 791,
+"plugs": [
+{
+"id": 114,
+"type": 2
+},
+{
+"id": 115,
+"type": 3
+}
+],
+"puzzle": "#End"
+},
+{
+"type": 771,
+"id": 116,
+"x": 556,
+"y": 792,
+"plugs": [
+{
+"id": 117,
+"type": 2
+},
+{
+"id": 118,
+"type": 3,
+"trgs": [
+114
+]
+}
+],
+"duration": "5000"
+},
+{
+"type": 786,
+"id": 119,
+"x": 553,
+"y": 862,
+"plugs": [
+{
+"id": 120,
+"type": 2
+},
+{
+"id": 121,
+"type": 3,
+"trgs": [
+123
+]
+}
+],
+"visible": "False",
+"duration": "0",
+"scene": "S_ABANDONNED_STREET_EMPTY",
+"obj": "O_TAGZ_HERO"
+},
+{
+"type": 786,
+"id": 122,
+"x": 799,
+"y": 862,
+"plugs": [
+{
+"id": 123,
+"type": 2
+},
+{
+"id": 124,
+"type": 3,
+"trgs": [
+129
+]
+}
+],
+"visible": "False",
+"duration": "0",
+"scene": "S_ABANDONNED_STREET_EMPTY",
+"obj": "O_TAGZ_HERO2"
+},
+{
+"type": 786,
+"id": 128,
+"x": 1064,
+"y": 861,
+"plugs": [
+{
+"id": 129,
+"type": 2
+},
+{
+"id": 130,
+"type": 3
+}
+],
+"visible": "False",
+"duration": "0",
+"scene": "S_ABANDONNED_STREET_EMPTY",
+"obj": "O_TAGZ_HERO3"
+},
+{
+"type": 1290,
+"id": 131,
+"x": 304,
+"y": 973,
+"plugs": [
+{
+"id": 132,
+"type": 3,
+"trgs": [
+134
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_COIN2"
+},
+{
+"type": 781,
+"id": 133,
+"x": 432,
+"y": 974,
+"plugs": [
+{
+"id": 134,
+"type": 2
+},
+{
+"id": 135,
+"type": 3,
+"trgs": [
+137
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "11"
+},
+{
+"type": 788,
+"id": 136,
+"x": 616,
+"y": 975,
+"plugs": [
+{
+"id": 137,
+"type": 2
+},
+{
+"id": 138,
+"type": 3,
+"trgs": [
+140
+]
+}
+],
+"script": "dump O_COIN\r\ndump O_COIN2",
+"player": "P_HERO",
+"obj": "O_BILLET",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 139,
+"x": 732,
+"y": 974,
+"plugs": [
+{
+"id": 140,
+"type": 2
+},
+{
+"id": 141,
+"type": 3
+}
+],
+"puzzle": "#Have_Billet"
+},
+{
+"type": 1031,
+"id": 142,
+"x": 1007,
+"y": 404,
+"plugs": [
+{
+"id": 143,
+"type": 2
+},
+{
+"id": 144,
+"type": 3,
+"trgs": [
+161
+]
+},
+{
+"id": 145,
+"type": 3
+},
+{
+"id": 146,
+"type": 3
+},
+{
+"id": 147,
+"type": 3
+}
+],
+"puzzle": "#Buy_Spray_Paint"
+},
+{
+"type": 1031,
+"id": 151,
+"x": 1018,
+"y": 564,
+"plugs": [
+{
+"id": 152,
+"type": 2
+},
+{
+"id": 153,
+"type": 3,
+"trgs": [
+164
+]
+},
+{
+"id": 154,
+"type": 3
+},
+{
+"id": 155,
+"type": 3
+},
+{
+"id": 156,
+"type": 3
+}
+],
+"puzzle": "#Buy_Spray_Paint"
+},
+{
+"type": 781,
+"id": 160,
+"x": 1163,
+"y": 404,
+"plugs": [
+{
+"id": 161,
+"type": 2
+},
+{
+"id": 162,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "9"
+},
+{
+"type": 781,
+"id": 163,
+"x": 1178,
+"y": 563,
+"plugs": [
+{
+"id": 164,
+"type": 2
+},
+{
+"id": 165,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "9"
 }
 ]
 }
@@ -1325,15 +2515,15 @@
 "uid": "R_ABANDONNED_STREET_FULL",
 "graph": {
 "board": {
-"nextid": 13,
-"x": -334,
-"y": -14,
+"nextid": 48,
+"x": -233,
+"y": -85,
 "boxes": [
 {
 "type": 257,
 "id": 1,
-"x": 220,
-"y": 270,
+"x": 421,
+"y": 135,
 "plugs": [
 {
 "id": 2,
@@ -1364,7 +2554,7 @@
 "type": 775,
 "id": 5,
 "x": 684,
-"y": 191,
+"y": 193,
 "plugs": [
 {
 "id": 6,
@@ -1402,8 +2592,8 @@
 {
 "type": 775,
 "id": 10,
-"x": 684,
-"y": 307,
+"x": 685,
+"y": 310,
 "plugs": [
 {
 "id": 11,
@@ -1418,6 +2608,235 @@
 "durationOut": "0",
 "durationWait": "0",
 "durationIn": "0"
+},
+{
+"type": 1287,
+"id": 13,
+"x": 421,
+"y": 422,
+"plugs": [
+{
+"id": 14,
+"type": 3,
+"trgs": [
+16
+]
+}
+],
+"varCmp": "==",
+"scene": "S_ABANDONNED_STREET_FULL",
+"obj": "O_TAGZ"
+},
+{
+"type": 781,
+"id": 15,
+"x": 666,
+"y": 423,
+"plugs": [
+{
+"id": 16,
+"type": 2
+},
+{
+"id": 17,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "10"
+},
+{
+"type": 1287,
+"id": 18,
+"x": 421,
+"y": 517,
+"plugs": [
+{
+"id": 19,
+"type": 3,
+"trgs": [
+21
+]
+}
+],
+"varCmp": "==",
+"scene": "S_ABANDONNED_STREET_FULL",
+"obj": "O_TAGZ3"
+},
+{
+"type": 781,
+"id": 20,
+"x": 666,
+"y": 518,
+"plugs": [
+{
+"id": 21,
+"type": 2
+},
+{
+"id": 22,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "10"
+},
+{
+"type": 1287,
+"id": 23,
+"x": 421,
+"y": 619,
+"plugs": [
+{
+"id": 24,
+"type": 3,
+"trgs": [
+26
+]
+}
+],
+"varCmp": "==",
+"scene": "S_ABANDONNED_STREET_FULL",
+"obj": "O_COIN2"
+},
+{
+"type": 788,
+"id": 25,
+"x": 647,
+"y": 620,
+"plugs": [
+{
+"id": 26,
+"type": 2
+},
+{
+"id": 27,
+"type": 3,
+"trgs": [
+29
+]
+}
+],
+"player": "P_HERO",
+"obj": "O_COIN2",
+"silent": "False"
+},
+{
+"type": 781,
+"id": 28,
+"x": 761,
+"y": 619,
+"plugs": [
+{
+"id": 29,
+"type": 2
+},
+{
+"id": 30,
+"type": 3,
+"trgs": [
+32
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "1"
+},
+{
+"type": 780,
+"id": 31,
+"x": 941,
+"y": 619,
+"plugs": [
+{
+"id": 32,
+"type": 2
+},
+{
+"id": 33,
+"type": 3
+}
+],
+"puzzle": "#Remenber_Coin"
+},
+{
+"type": 1290,
+"id": 34,
+"x": 420,
+"y": 716,
+"plugs": [
+{
+"id": 35,
+"type": 3,
+"trgs": [
+43
+]
+}
+],
+"varCmp": "==",
+"obj": "O_COIN",
+"obj2": "O_COIN2"
+},
+{
+"type": 781,
+"id": 39,
+"x": 681,
+"y": 717,
+"plugs": [
+{
+"id": 40,
+"type": 2
+},
+{
+"id": 41,
+"type": 3,
+"trgs": [
+46
+]
+}
+],
+"dialog": "D_HERO",
+"sentence": "11"
+},
+{
+"type": 788,
+"id": 42,
+"x": 561,
+"y": 716,
+"plugs": [
+{
+"id": 43,
+"type": 2
+},
+{
+"id": 44,
+"type": 3,
+"trgs": [
+40
+]
+}
+],
+"script": "dump O_COIN\r\ndump O_COIN2",
+"player": "P_HERO",
+"obj": "O_BILLET",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 45,
+"x": 861,
+"y": 716,
+"plugs": [
+{
+"id": 46,
+"type": 2
+},
+{
+"id": 47,
+"type": 3
+}
+],
+"puzzle": "#Have_Billet"
 }
 ]
 }
@@ -1501,8 +2920,8 @@
 "nextID": 7,
 "role": "R_CITY",
 "zoom": 100,
-"x": 1385,
-"y": 490
+"x": 760,
+"y": 390
 },
 "objects": [
 {
@@ -24356,11 +25775,11 @@
 "opacitySpeed": 100
 }
 },
-"nextID": 24,
+"nextID": 25,
 "role": "R_ABANDONNED_STREET",
-"zoom": 30,
-"x": -76,
-"y": 53
+"zoom": 40,
+"x": -214,
+"y": -116
 },
 "objects": [
 {
@@ -24395,323 +25814,6 @@
 {
 "cells": [
 {
-"row": 46
-},
-{
-"row": 47
-},
-{
-"row": 48
-},
-{
-"col": 1,
-"row": 46
-},
-{
-"col": 1,
-"row": 47
-},
-{
-"col": 1,
-"row": 48
-},
-{
-"col": 2,
-"row": 46
-},
-{
-"col": 2,
-"row": 47
-},
-{
-"col": 2,
-"row": 48
-},
-{
-"col": 3,
-"row": 46
-},
-{
-"col": 3,
-"row": 47
-},
-{
-"col": 3,
-"row": 48
-},
-{
-"col": 4,
-"row": 46
-},
-{
-"col": 4,
-"row": 47
-},
-{
-"col": 4,
-"row": 48
-},
-{
-"col": 5,
-"row": 46
-},
-{
-"col": 5,
-"row": 47
-},
-{
-"col": 5,
-"row": 48
-},
-{
-"col": 6,
-"row": 46
-},
-{
-"col": 6,
-"row": 47
-},
-{
-"col": 6,
-"row": 48
-},
-{
-"col": 7,
-"row": 46
-},
-{
-"col": 7,
-"row": 47
-},
-{
-"col": 7,
-"row": 48
-},
-{
-"col": 8,
-"row": 46
-},
-{
-"col": 8,
-"row": 47
-},
-{
-"col": 8,
-"row": 48
-},
-{
-"col": 9,
-"row": 46
-},
-{
-"col": 9,
-"row": 47
-},
-{
-"col": 9,
-"row": 48
-},
-{
-"col": 10,
-"row": 46
-},
-{
-"col": 10,
-"row": 47
-},
-{
-"col": 10,
-"row": 48
-},
-{
-"col": 11,
-"row": 46
-},
-{
-"col": 11,
-"row": 47
-},
-{
-"col": 11,
-"row": 48
-},
-{
-"col": 7,
-"row": 49
-},
-{
-"col": 8,
-"row": 49
-},
-{
-"col": 9,
-"row": 49
-},
-{
-"col": 10,
-"row": 49
-},
-{
-"col": 6,
-"row": 49
-},
-{
-"col": 5,
-"row": 49
-},
-{
-"col": 5,
-"row": 50
-},
-{
-"col": 6,
-"row": 50
-},
-{
-"col": 7,
-"row": 50
-},
-{
-"col": 8,
-"row": 50
-},
-{
-"col": 4,
-"row": 49
-},
-{
-"col": 4,
-"row": 50
-},
-{
-"col": 3,
-"row": 49
-},
-{
-"col": 3,
-"row": 50
-},
-{
-"col": 2,
-"row": 49
-},
-{
-"col": 2,
-"row": 50
-},
-{
-"col": 1,
-"row": 49
-},
-{
-"row": 49
-},
-{
-"row": 50
-},
-{
-"row": 51
-},
-{
-"col": 1,
-"row": 51
-},
-{
-"col": 2,
-"row": 51
-},
-{
-"row": 52
-},
-{
-"col": 1,
-"row": 52
-},
-{
-"col": 2,
-"row": 52
-},
-{
-"col": 3,
-"row": 51
-},
-{
-"col": 3,
-"row": 52
-},
-{
-"col": 4,
-"row": 51
-},
-{
-"col": 4,
-"row": 52
-},
-{
-"col": 5,
-"row": 51
-},
-{
-"col": 5,
-"row": 52
-},
-{
-"col": 6,
-"row": 51
-},
-{
-"col": 6,
-"row": 52
-},
-{
-"col": 7,
-"row": 51
-},
-{
-"col": 7,
-"row": 52
-},
-{
-"col": 8,
-"row": 51
-},
-{
-"col": 8,
-"row": 52
-},
-{
-"col": 9,
-"row": 50
-},
-{
-"col": 9,
-"row": 51
-},
-{
-"col": 9,
-"row": 52
-},
-{
-"col": 10,
-"row": 50
-},
-{
-"col": 10,
-"row": 51
-},
-{
-"col": 10,
-"row": 52
-},
-{
-"col": 11,
-"row": 49
-},
-{
-"col": 11,
-"row": 50
-},
-{
 "col": 11,
 "row": 51
 },
@@ -24768,16 +25870,8 @@
 "row": 52
 },
 {
-"col": 12,
-"row": 48
-},
-{
 "col": 13,
 "row": 48
-},
-{
-"col": 12,
-"row": 47
 },
 {
 "col": 13,
@@ -24790,14 +25884,6 @@
 {
 "col": 14,
 "row": 48
-},
-{
-"col": 12,
-"row": 46
-},
-{
-"col": 13,
-"row": 46
 },
 {
 "col": 14,
@@ -24818,10 +25904,6 @@
 {
 "col": 15,
 "row": 49
-},
-{
-"col": 13,
-"row": 45
 },
 {
 "col": 14,
@@ -24830,14 +25912,6 @@
 {
 "col": 15,
 "row": 45
-},
-{
-"col": 13,
-"row": 44
-},
-{
-"col": 14,
-"row": 44
 },
 {
 "col": 15,
@@ -25238,10 +26312,6 @@
 {
 "col": 16,
 "row": 44
-},
-{
-"col": 14,
-"row": 43
 },
 {
 "col": 15,
@@ -25331,7 +26401,7 @@
 "col": 23,
 "row": 44,
 "linkSelObj": {
-"obj": "O_WALL2"
+"obj": "O_WALL_STREET2"
 }
 },
 {
@@ -25832,147 +26902,11 @@
 },
 {
 "col": 75,
-"row": 46
-},
-{
-"col": 75,
 "row": 47
 },
 {
 "col": 76,
-"row": 46
-},
-{
-"col": 76,
 "row": 47
-},
-{
-"col": 77,
-"row": 44
-},
-{
-"col": 77,
-"row": 45
-},
-{
-"col": 77,
-"row": 46
-},
-{
-"col": 77,
-"row": 47
-},
-{
-"col": 78,
-"row": 44
-},
-{
-"col": 78,
-"row": 45
-},
-{
-"col": 78,
-"row": 46
-},
-{
-"col": 78,
-"row": 47
-},
-{
-"col": 79,
-"row": 44
-},
-{
-"col": 79,
-"row": 45
-},
-{
-"col": 79,
-"row": 46
-},
-{
-"col": 79,
-"row": 47
-},
-{
-"col": 78,
-"row": 43
-},
-{
-"col": 79,
-"row": 43
-},
-{
-"col": 80,
-"row": 43
-},
-{
-"col": 80,
-"row": 44
-},
-{
-"col": 80,
-"row": 45
-},
-{
-"col": 80,
-"row": 46
-},
-{
-"col": 79,
-"row": 42
-},
-{
-"col": 80,
-"row": 42
-},
-{
-"col": 79,
-"row": 41
-},
-{
-"col": 80,
-"row": 41
-},
-{
-"col": 81,
-"row": 40
-},
-{
-"col": 81,
-"row": 41
-},
-{
-"col": 81,
-"row": 42
-},
-{
-"col": 81,
-"row": 43
-},
-{
-"col": 82,
-"row": 40
-},
-{
-"col": 82,
-"row": 41
-},
-{
-"col": 82,
-"row": 42
-},
-{
-"col": 82,
-"row": 43
-},
-{
-"col": 83,
-"row": 43
-},
-{
-"col": 109,
-"row": 51
 },
 {
 "col": 110,
@@ -26500,14 +27434,6 @@
 },
 {
 "col": 80,
-"row": 49
-},
-{
-"col": 80,
-"row": 50
-},
-{
-"col": 80,
 "row": 51
 },
 {
@@ -26516,266 +27442,10 @@
 },
 {
 "col": 81,
-"row": 49
-},
-{
-"col": 81,
-"row": 50
-},
-{
-"col": 81,
 "row": 51
 },
 {
 "col": 81,
-"row": 52
-},
-{
-"col": 82,
-"row": 49
-},
-{
-"col": 82,
-"row": 50
-},
-{
-"col": 82,
-"row": 51
-},
-{
-"col": 82,
-"row": 52
-},
-{
-"col": 83,
-"row": 49
-},
-{
-"col": 83,
-"row": 50
-},
-{
-"col": 83,
-"row": 51
-},
-{
-"col": 83,
-"row": 52
-},
-{
-"col": 84,
-"row": 49
-},
-{
-"col": 84,
-"row": 50
-},
-{
-"col": 84,
-"row": 51
-},
-{
-"col": 84,
-"row": 52
-},
-{
-"col": 85,
-"row": 50
-},
-{
-"col": 85,
-"row": 51
-},
-{
-"col": 85,
-"row": 52
-},
-{
-"col": 86,
-"row": 50
-},
-{
-"col": 86,
-"row": 51
-},
-{
-"col": 86,
-"row": 52
-},
-{
-"col": 87,
-"row": 51
-},
-{
-"col": 87,
-"row": 52
-},
-{
-"col": 88,
-"row": 51
-},
-{
-"col": 88,
-"row": 52
-},
-{
-"col": 89,
-"row": 51
-},
-{
-"col": 89,
-"row": 52
-},
-{
-"col": 90,
-"row": 51
-},
-{
-"col": 90,
-"row": 52
-},
-{
-"col": 91,
-"row": 51
-},
-{
-"col": 91,
-"row": 52
-},
-{
-"col": 92,
-"row": 51
-},
-{
-"col": 92,
-"row": 52
-},
-{
-"col": 93,
-"row": 51
-},
-{
-"col": 93,
-"row": 52
-},
-{
-"col": 94,
-"row": 51
-},
-{
-"col": 94,
-"row": 52
-},
-{
-"col": 95,
-"row": 51
-},
-{
-"col": 95,
-"row": 52
-},
-{
-"col": 96,
-"row": 51
-},
-{
-"col": 96,
-"row": 52
-},
-{
-"col": 97,
-"row": 51
-},
-{
-"col": 97,
-"row": 52
-},
-{
-"col": 98,
-"row": 51
-},
-{
-"col": 98,
-"row": 52
-},
-{
-"col": 99,
-"row": 51
-},
-{
-"col": 99,
-"row": 52
-},
-{
-"col": 100,
-"row": 51
-},
-{
-"col": 100,
-"row": 52
-},
-{
-"col": 101,
-"row": 51
-},
-{
-"col": 101,
-"row": 52
-},
-{
-"col": 102,
-"row": 51
-},
-{
-"col": 102,
-"row": 52
-},
-{
-"col": 103,
-"row": 51
-},
-{
-"col": 103,
-"row": 52
-},
-{
-"col": 104,
-"row": 51
-},
-{
-"col": 104,
-"row": 52
-},
-{
-"col": 105,
-"row": 51
-},
-{
-"col": 105,
-"row": 52
-},
-{
-"col": 106,
-"row": 51
-},
-{
-"col": 106,
-"row": 52
-},
-{
-"col": 107,
-"row": 51
-},
-{
-"col": 107,
-"row": 52
-},
-{
-"col": 108,
-"row": 51
-},
-{
-"col": 108,
 "row": 52
 },
 {
@@ -26825,106 +27495,6 @@
 {
 "col": 119,
 "row": 52
-},
-{
-"col": 86,
-"row": 49
-},
-{
-"col": 84,
-"row": 46
-},
-{
-"col": 84,
-"row": 47
-},
-{
-"col": 84,
-"row": 48
-},
-{
-"col": 85,
-"row": 47
-},
-{
-"col": 85,
-"row": 48
-},
-{
-"col": 85,
-"row": 49
-},
-{
-"col": 83,
-"row": 44
-},
-{
-"col": 83,
-"row": 45
-},
-{
-"col": 83,
-"row": 46
-},
-{
-"col": 83,
-"row": 47
-},
-{
-"col": 84,
-"row": 45
-},
-{
-"col": 81,
-"row": 44
-},
-{
-"col": 81,
-"row": 45
-},
-{
-"col": 81,
-"row": 46
-},
-{
-"col": 81,
-"row": 47
-},
-{
-"col": 82,
-"row": 44
-},
-{
-"col": 82,
-"row": 45
-},
-{
-"col": 82,
-"row": 46
-},
-{
-"col": 82,
-"row": 47
-},
-{
-"col": 81,
-"row": 48
-},
-{
-"col": 82,
-"row": 48
-},
-{
-"col": 83,
-"row": 48
-},
-{
-"col": 80,
-"row": 47
-},
-{
-"col": 80,
-"row": 48
 },
 {
 "col": 78,
@@ -34238,10 +34808,6 @@
 "row": 53
 },
 {
-"col": 1,
-"row": 50
-},
-{
 "col": 118,
 "row": 51
 },
@@ -34270,48 +34836,139 @@
 "row": 48
 },
 {
+"col": 60,
+"row": 48,
+"linkSelObj": {
+"obj": "O_BOX_STREET"
+}
+},
+{
+"col": 112,
+"row": 49
+},
+{
+"col": 112,
+"row": 50
+},
+{
+"col": 113,
+"row": 49
+},
+{
+"col": 113,
+"row": 50
+},
+{
+"col": 114,
+"row": 49
+},
+{
+"col": 114,
+"row": 50
+},
+{
+"col": 115,
+"row": 49
+},
+{
+"col": 115,
+"row": 50
+},
+{
+"col": 116,
+"row": 49
+},
+{
+"col": 116,
+"row": 50
+},
+{
+"col": 117,
+"row": 49
+},
+{
+"col": 117,
+"row": 50
+},
+{
+"col": 118,
+"row": 49
+},
+{
+"col": 118,
+"row": 50
+},
+{
+"col": 119,
+"row": 49
+},
+{
+"col": 119,
+"row": 50
+},
+{
+"col": 111,
+"row": 50
+},
+{
+"col": 114,
+"row": 48
+},
+{
+"col": 115,
+"row": 48
+},
+{
+"col": 116,
+"row": 48
+},
+{
+"col": 117,
+"row": 48
+},
+{
+"col": 118,
+"row": 48
+},
+{
+"col": 119,
+"row": 48
+},
+{
+"col": 118,
+"row": 47
+},
+{
+"col": 119,
+"row": 47
+},
+{
+"col": 117,
+"row": 47
+},
+{
+"col": 116,
+"row": 47
+},
+{
 "col": 75,
-"row": 45
+"row": 46
 },
 {
 "col": 76,
-"row": 45
-},
-{
-"col": 76,
-"row": 44
-},
-{
-"col": 76,
-"row": 43
+"row": 46
 },
 {
 "col": 77,
-"row": 43
+"row": 46
 },
 {
 "col": 77,
-"row": 42
+"row": 47
 },
 {
 "col": 78,
-"row": 42
-},
-{
-"col": 78,
-"row": 41
-},
-{
-"col": 78,
-"row": 40
-},
-{
-"col": 79,
-"row": 40
-},
-{
-"col": 80,
-"row": 40
+"row": 47
 }
 ]
 },
@@ -34335,7 +34992,7 @@
 ]
 },
 {
-"uid": "O_FLOOR",
+"uid": "O_FLOOR_STREET",
 "depths": [
 {
 "a": 100,
@@ -34383,7 +35040,7 @@
 ]
 },
 {
-"uid": "O_WALL",
+"uid": "O_WALL_STREET",
 "id": 18,
 "tags": [
 "",
@@ -34420,7 +35077,7 @@
 ]
 },
 {
-"uid": "O_WALL2",
+"uid": "O_WALL_STREET2",
 "id": 19,
 "tags": [
 "",
@@ -34457,7 +35114,7 @@
 ]
 },
 {
-"uid": "O_BOX",
+"uid": "O_BOX_STREET",
 "depths": [
 {
 "a": 100,
@@ -34505,7 +35162,7 @@
 ]
 },
 {
-"uid": "O_POUBELLE",
+"uid": "O_TRACH_STREET",
 "id": 21,
 "tags": [
 "",
@@ -34542,7 +35199,7 @@
 ]
 },
 {
-"uid": "O_WASTE",
+"uid": "O_WASTE_STREET",
 "id": 22,
 "tags": [
 "",
@@ -34550,8 +35207,8 @@
 "",
 ""
 ],
-"x": 292,
-"y": 850,
+"x": 277,
+"y": 435,
 "parallax": 100,
 "lightAmbient": 255,
 "lightDiffuse": 16777215,
@@ -34579,7 +35236,7 @@
 ]
 },
 {
-"uid": "O_POUBELLE2",
+"uid": "O_TRACH_STREET2",
 "depths": [
 {
 "a": 100,
@@ -34600,6 +35257,54 @@
 ],
 "x": 1576,
 "y": 831,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ4",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 24,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 746,
+"y": 198,
 "parallax": 100,
 "lightAmbient": 255,
 "lightDiffuse": 16777215,
@@ -34733,11 +35438,11 @@
 "opacitySpeed": 100
 }
 },
-"nextID": 18,
+"nextID": 26,
 "role": "R_ABANDONNED_STREET_EMPTY",
-"zoom": 33,
-"x": -31,
-"y": 138
+"zoom": 38,
+"x": -124,
+"y": -77
 },
 "objects": [
 {
@@ -39904,7 +40609,7 @@
 "col": 45,
 "row": 41,
 "linkSelObj": {
-"obj": "O_WALL"
+"obj": "O_WALL_STREET_EMPTY"
 }
 },
 {
@@ -47853,16 +48558,27 @@
 ]
 },
 {
-"uid": "O_FLOOR",
-"id": 15,
+"uid": "O_FLOOR_STREET_EMPTY",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1072,
+"a": 100,
+"b": 100
+}
+],
+"id": 18,
 "tags": [
 "",
 "",
 "",
 ""
 ],
-"x": 1032,
-"y": -46,
+"x": 1029,
+"y": -62,
 "parallax": 100,
 "lightAmbient": 255,
 "lightDiffuse": 16777215,
@@ -47887,30 +48603,307 @@
 {},
 {},
 {}
-],
-"depths": [
-{
-"a": 100,
-"b": 100
-},
-{
-"y": 1072,
-"a": 100,
-"b": 100
-}
 ]
 },
 {
-"uid": "O_WALL",
-"id": 17,
+"uid": "O_WALL_STREET_EMPTY",
+"id": 19,
 "tags": [
 "",
 "",
 "",
 ""
 ],
-"x": 2,
-"y": 13,
+"x": -2,
+"y": -12,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ2",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 20,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": -58,
+"y": 369,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ6",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 21,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1260,
+"y": 496,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ5",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 22,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1675,
+"y": 393,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ_HERO",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 23,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 821,
+"y": 528,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ_HERO2",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 24,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 867,
+"y": 316,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ_HERO3",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 25,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 630,
+"y": 360,
 "parallax": 100,
 "lightAmbient": 255,
 "lightDiffuse": 16777215,
@@ -48031,11 +49024,11 @@
 "hiddenEditor": true
 }
 },
-"nextID": 15,
+"nextID": 19,
 "role": "R_ABANDONNED_STREET_FULL",
-"zoom": 33,
-"x": -248,
-"y": 96
+"zoom": 48,
+"x": -201,
+"y": -3
 },
 "objects": [
 {
@@ -48967,7 +49960,10 @@
 },
 {
 "col": 27,
-"row": 46
+"row": 46,
+"linkSelObj": {
+"obj": "O_COIN2"
+}
 },
 {
 "col": 24,
@@ -49462,10 +50458,6 @@
 },
 {
 "col": 41,
-"row": 49
-},
-{
-"col": 41,
 "row": 50
 },
 {
@@ -49478,10 +50470,6 @@
 },
 {
 "col": 42,
-"row": 49
-},
-{
-"col": 42,
 "row": 50
 },
 {
@@ -49494,14 +50482,6 @@
 },
 {
 "col": 43,
-"row": 49
-},
-{
-"col": 43,
-"row": 50
-},
-{
-"col": 43,
 "row": 51
 },
 {
@@ -49510,91 +50490,7 @@
 },
 {
 "col": 44,
-"row": 49
-},
-{
-"col": 44,
-"row": 50
-},
-{
-"col": 44,
-"row": 51
-},
-{
-"col": 44,
 "row": 52
-},
-{
-"col": 45,
-"row": 49
-},
-{
-"col": 45,
-"row": 50
-},
-{
-"col": 45,
-"row": 51
-},
-{
-"col": 45,
-"row": 52
-},
-{
-"col": 46,
-"row": 49
-},
-{
-"col": 46,
-"row": 50
-},
-{
-"col": 46,
-"row": 51
-},
-{
-"col": 46,
-"row": 52
-},
-{
-"col": 47,
-"row": 49
-},
-{
-"col": 47,
-"row": 50
-},
-{
-"col": 47,
-"row": 51
-},
-{
-"col": 47,
-"row": 52
-},
-{
-"col": 48,
-"row": 49
-},
-{
-"col": 48,
-"row": 50
-},
-{
-"col": 48,
-"row": 51
-},
-{
-"col": 49,
-"row": 49
-},
-{
-"col": 49,
-"row": 50
-},
-{
-"col": 55,
-"row": 47
 },
 {
 "col": 56,
@@ -49750,7 +50646,10 @@
 },
 {
 "col": 68,
-"row": 46
+"row": 46,
+"linkSelObj": {
+"obj": "O_TAGZ3"
+}
 },
 {
 "col": 69,
@@ -49762,7 +50661,10 @@
 },
 {
 "col": 69,
-"row": 46
+"row": 46,
+"linkSelObj": {
+"obj": "O_TAGZ"
+}
 },
 {
 "col": 66,
@@ -50026,90 +50928,6 @@
 },
 {
 "col": 119,
-"row": 50
-},
-{
-"col": 48,
-"row": 52
-},
-{
-"col": 49,
-"row": 51
-},
-{
-"col": 49,
-"row": 52
-},
-{
-"col": 50,
-"row": 49
-},
-{
-"col": 50,
-"row": 50
-},
-{
-"col": 50,
-"row": 51
-},
-{
-"col": 50,
-"row": 52
-},
-{
-"col": 51,
-"row": 49
-},
-{
-"col": 51,
-"row": 50
-},
-{
-"col": 51,
-"row": 51
-},
-{
-"col": 51,
-"row": 52
-},
-{
-"col": 52,
-"row": 49
-},
-{
-"col": 52,
-"row": 50
-},
-{
-"col": 52,
-"row": 51
-},
-{
-"col": 52,
-"row": 52
-},
-{
-"col": 53,
-"row": 49
-},
-{
-"col": 53,
-"row": 50
-},
-{
-"col": 53,
-"row": 51
-},
-{
-"col": 53,
-"row": 52
-},
-{
-"col": 54,
-"row": 49
-},
-{
-"col": 54,
 "row": 50
 },
 {
@@ -50706,14 +51524,6 @@
 },
 {
 "col": 56,
-"row": 48
-},
-{
-"col": 55,
-"row": 48
-},
-{
-"col": 54,
 "row": 48
 },
 {
@@ -57464,6 +58274,150 @@
 {},
 {}
 ]
+},
+{
+"uid": "O_TAGZ",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 16,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1220,
+"y": 463,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_TAGZ3",
+"depths": [
+{
+"a": 400,
+"b": 100
+},
+{
+"y": 1072,
+"a": 400,
+"b": 100
+}
+],
+"id": 17,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1108,
+"y": 275,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"uid": "O_COIN2",
+"id": 18,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 349,
+"y": 624,
+"parallax": 100,
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"depths": [
+{
+"a": 200,
+"b": 100
+},
+{
+"y": 1072,
+"a": 200,
+"b": 100
+}
+]
 }
 ],
 "sid": 21,
@@ -57481,7 +58435,8 @@
 "x": 1823,
 "y": 407,
 "width": 178,
-"height": 673
+"height": 673,
+"hidden": true
 },
 {
 "name": "DOOR_STREET",
@@ -58372,7 +59327,7 @@
 }
 ],
 "sid": 13,
-"uid": "O_FLOOR",
+"uid": "O_FLOOR_STREET",
 "packset": {
 "frames": [
 {
@@ -58533,7 +59488,6 @@
 },
 {
 "object": {
-"maxScale": -1,
 "title": {
 "en": "Piece"
 },
@@ -58948,7 +59902,7 @@
 }
 ],
 "sid": 17,
-"uid": "O_ROAD",
+"uid": "O_ROAD_STREET",
 "packset": {
 "frames": [
 {
@@ -58974,7 +59928,7 @@
 "x": 977,
 "y": 689,
 "title": {
-"en": "dechet"
+"en": "Detritus"
 }
 },
 "anims": [
@@ -59022,74 +59976,10 @@
 "name": "BR"
 }
 ]
-},
-{
-"name": "TALK",
-"fps": 6,
-"action": -1,
-"loopRangeMax": -1,
-"dirs": [
-{
-"name": "LEFT"
-},
-{
-"name": "RIGHT"
-},
-{
-"name": "FRONT"
-},
-{
-"name": "BACK"
-},
-{
-"name": "FL"
-},
-{
-"name": "FR"
-},
-{
-"name": "BL"
-},
-{
-"name": "BR"
-}
-]
-},
-{
-"name": "WALK",
-"fps": 6,
-"action": -1,
-"loopRangeMax": -1,
-"dirs": [
-{
-"name": "LEFT"
-},
-{
-"name": "RIGHT"
-},
-{
-"name": "FRONT"
-},
-{
-"name": "BACK"
-},
-{
-"name": "FL"
-},
-{
-"name": "FR"
-},
-{
-"name": "BL"
-},
-{
-"name": "BR"
-}
-]
 }
 ],
 "sid": 18,
-"uid": "O_DECORATION_STREET",
+"uid": "O_BOX_TRACH_WASTE_STREET",
 "packset": {
 "frames": [
 {
@@ -59226,7 +60116,7 @@
 }
 ],
 "sid": 19,
-"uid": "O_DECORATION_STREET2",
+"uid": "O_BUILDING_STREET",
 "packset": {
 "frames": [
 {
@@ -59247,7 +60137,9 @@
 {
 "object": {
 "bbox": true,
-"maxScale": -1
+"maxScale": 100,
+"width": 32,
+"height": 32
 },
 "anims": [
 {
@@ -59260,7 +60152,19 @@
 "name": "LEFT"
 },
 {
-"name": "RIGHT"
+"name": "RIGHT",
+"count": 1,
+"frames": [
+{
+"md5": "7fcfaffe030d3136f626afa4a365b421",
+"wtrim": 32,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 36,
+"hdraw": 36
+}
+]
 },
 {
 "name": "FRONT"
@@ -59348,135 +60252,15 @@
 }
 ],
 "sid": 25,
-"uid": "O_COIN2"
-},
-{
-"object": {
-"bbox": true,
-"maxScale": -1,
-"width": 32,
-"height": 32
-},
-"anims": [
-{
-"name": "STOP",
-"fps": 6,
-"action": -1,
-"loopRangeMax": -1,
-"dirs": [
-{
-"name": "LEFT"
-},
-{
-"name": "RIGHT",
-"count": 1,
-"frames": [
-{
-"md5": "9643046d07bd0938de1be59d49066514",
-"wtrim": 126,
-"htrim": 94,
-"xdraw": -2,
-"ydraw": -2,
-"wdraw": 130,
-"hdraw": 98
-}
-]
-},
-{
-"name": "FRONT"
-},
-{
-"name": "BACK"
-},
-{
-"name": "FL"
-},
-{
-"name": "FR"
-},
-{
-"name": "BL"
-},
-{
-"name": "BR"
-}
-]
-},
-{
-"name": "TALK",
-"fps": 6,
-"action": -1,
-"loopRangeMax": -1,
-"dirs": [
-{
-"name": "LEFT"
-},
-{
-"name": "RIGHT"
-},
-{
-"name": "FRONT"
-},
-{
-"name": "BACK"
-},
-{
-"name": "FL"
-},
-{
-"name": "FR"
-},
-{
-"name": "BL"
-},
-{
-"name": "BR"
-}
-]
-},
-{
-"name": "WALK",
-"fps": 6,
-"action": -1,
-"loopRangeMax": -1,
-"dirs": [
-{
-"name": "LEFT"
-},
-{
-"name": "RIGHT"
-},
-{
-"name": "FRONT"
-},
-{
-"name": "BACK"
-},
-{
-"name": "FL"
-},
-{
-"name": "FR"
-},
-{
-"name": "BL"
-},
-{
-"name": "BR"
-}
-]
-}
-],
-"sid": 26,
-"uid": "O_COIN_GOLD",
+"uid": "O_COIN2",
 "packset": {
 "frames": [
 {
 "index2": -1,
 "x": 2,
 "y": 2,
-"w": 126,
-"h": 94
+"w": 32,
+"h": 32
 }
 ],
 "packs": [
@@ -59757,7 +60541,7 @@
 }
 ],
 "sid": 30,
-"uid": "O_WALL",
+"uid": "O_WALL_STREET",
 "packset": {
 "frames": [
 {
@@ -59779,7 +60563,10 @@
 "object": {
 "maxScale": -1,
 "width": 1920,
-"height": 662
+"height": 662,
+"title": {
+"en": "Mur"
+}
 },
 "anims": [
 {
@@ -59893,7 +60680,7 @@
 }
 ],
 "sid": 31,
-"uid": "O_WALL2",
+"uid": "O_WALL_STREET2",
 "packset": {
 "frames": [
 {
@@ -59917,7 +60704,10 @@
 "width": 756,
 "height": 472,
 "x": 473,
-"y": 381
+"y": 381,
+"title": {
+"en": "Caisse"
+}
 },
 "anims": [
 {
@@ -60045,7 +60835,7 @@
 }
 ],
 "sid": 32,
-"uid": "O_BOX",
+"uid": "O_BOX_STREET",
 "packset": {
 "frames": [
 {
@@ -60073,8 +60863,11 @@
 "maxScale": -1,
 "width": 357,
 "height": 239,
-"x": 183,
-"y": 237
+"x": 168,
+"y": -178,
+"title": {
+"en": "Dechet"
+}
 },
 "anims": [
 {
@@ -60204,7 +60997,7 @@
 }
 ],
 "sid": 33,
-"uid": "O_WASTE",
+"uid": "O_WASTE_STREET",
 "packset": {
 "frames": [
 {
@@ -60233,7 +61026,10 @@
 "width": 617,
 "height": 561,
 "x": 273,
-"y": 541
+"y": 541,
+"title": {
+"en": "Poubelle"
+}
 },
 "anims": [
 {
@@ -60363,7 +61159,7 @@
 }
 ],
 "sid": 34,
-"uid": "O_POUBELLE",
+"uid": "O_TRACH_STREET",
 "packset": {
 "frames": [
 {
@@ -60392,7 +61188,10 @@
 "width": 617,
 "height": 561,
 "x": 273,
-"y": 541
+"y": 541,
+"title": {
+"en": "Poubelle"
+}
 },
 "anims": [
 {
@@ -60522,7 +61321,7 @@
 }
 ],
 "sid": 35,
-"uid": "O_POUBELLE2",
+"uid": "O_TRACH_STREET2",
 "packset": {
 "frames": [
 {
@@ -60601,7 +61400,7 @@
 }
 ],
 "sid": 36,
-"uid": "O_ROAD_STREET_FULL",
+"uid": "O_ROAD_STREET_EMPTY",
 "packset": {
 "frames": [
 {
@@ -60615,6 +61414,1703 @@
 "packs": [
 {
 "count": 1
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"width": 1920,
+"height": 662,
+"title": {
+"en": "Mur"
+}
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "c0f5a43bc2b489c28e744b2b517e025b",
+"ytrim": 168,
+"wtrim": 1920,
+"htrim": 494,
+"xdraw": -2,
+"ydraw": 166,
+"wdraw": 1924,
+"hdraw": 498
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 37,
+"uid": "O_WALL_STREET_EMPTY",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 1920,
+"h": 494
+}
+],
+"packs": [
+{
+"count": 1
+}
+]
+}
+},
+{
+"object": {
+"width": 1920,
+"height": 191,
+"disabled": true,
+"x": 1030,
+"y": -713,
+"maxScale": -1
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "d2f21eb9ea22d7f2e11760088e62234e",
+"wtrim": 1920,
+"htrim": 192,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 1924,
+"hdraw": 196
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 38,
+"uid": "O_FLOOR_STREET_EMPTY",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 1920,
+"h": 192
+}
+],
+"packs": [
+{
+"count": 1
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Tag"
+},
+"width": 60,
+"height": 31
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "00a85e099d7631d10314a2c997eb3175",
+"wtrim": 60,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 64,
+"hdraw": 36
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "00a85e099d7631d10314a2c997eb3175",
+"wtrim": 60,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 64,
+"hdraw": 36
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 39,
+"uid": "O_TAGZ",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 60,
+"h": 32
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Tag"
+},
+"width": 80,
+"height": 28
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "0ea6a6106cbdd514dd29158501b5efbd",
+"wtrim": 80,
+"htrim": 28,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 84,
+"hdraw": 32
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "0ea6a6106cbdd514dd29158501b5efbd",
+"wtrim": 80,
+"htrim": 28,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 84,
+"hdraw": 32
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 40,
+"uid": "O_TAGZ2",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 80,
+"h": 28
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Tag"
+},
+"width": 80,
+"height": 28
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "0ea6a6106cbdd514dd29158501b5efbd",
+"wtrim": 80,
+"htrim": 28,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 84,
+"hdraw": 32
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "0ea6a6106cbdd514dd29158501b5efbd",
+"wtrim": 80,
+"htrim": 28,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 84,
+"hdraw": 32
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 41,
+"uid": "O_TAGZ3",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 80,
+"h": 28
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Tag"
+},
+"width": 92,
+"height": 47
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "16e1653f045d92e6d1cafe1bedb9e67c",
+"wtrim": 92,
+"htrim": 48,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 96,
+"hdraw": 52
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "16e1653f045d92e6d1cafe1bedb9e67c",
+"wtrim": 92,
+"htrim": 48,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 96,
+"hdraw": 52
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 42,
+"uid": "O_TAGZ4",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 92,
+"h": 48
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Tag"
+},
+"width": 60,
+"height": 31
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "00a85e099d7631d10314a2c997eb3175",
+"wtrim": 60,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 64,
+"hdraw": 36
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "00a85e099d7631d10314a2c997eb3175",
+"wtrim": 60,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 64,
+"hdraw": 36
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 43,
+"uid": "O_TAGZ5",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 60,
+"h": 32
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Tag"
+},
+"width": 65,
+"height": 35
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "658e6be779c5e12d162bf42ec152495b",
+"xtrim": -1,
+"wtrim": 66,
+"htrim": 36,
+"xdraw": -3,
+"ydraw": -2,
+"wdraw": 70,
+"hdraw": 40
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "658e6be779c5e12d162bf42ec152495b",
+"wtrim": 66,
+"htrim": 36,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 70,
+"hdraw": 40
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 44,
+"uid": "O_TAGZ6",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 66,
+"h": 36
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Votre Tag"
+},
+"width": 80,
+"height": 28
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "0ea6a6106cbdd514dd29158501b5efbd",
+"wtrim": 80,
+"htrim": 28,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 84,
+"hdraw": 32
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "0ea6a6106cbdd514dd29158501b5efbd",
+"wtrim": 80,
+"htrim": 28,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 84,
+"hdraw": 32
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 45,
+"uid": "O_TAGZ_HERO",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 80,
+"h": 28
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Votre Tag"
+},
+"width": 60,
+"height": 31
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "00a85e099d7631d10314a2c997eb3175",
+"wtrim": 60,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 64,
+"hdraw": 36
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "00a85e099d7631d10314a2c997eb3175",
+"wtrim": 60,
+"htrim": 32,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 64,
+"hdraw": 36
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 46,
+"uid": "O_TAGZ_HERO2",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 60,
+"h": 32
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"title": {
+"en": "Votre Tag"
+},
+"width": 68,
+"height": 49
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "a3e0d3efd4921a423166c351db309189",
+"wtrim": 68,
+"htrim": 50,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 72,
+"hdraw": 54
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "a3e0d3efd4921a423166c351db309189",
+"wtrim": 68,
+"htrim": 50,
+"xdraw": -2,
+"ydraw": -2,
+"wdraw": 72,
+"hdraw": 54
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 47,
+"uid": "O_TAGZ_HERO3",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 68,
+"h": 50
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
+}
+]
+}
+},
+{
+"object": {
+"maxScale": -1,
+"width": 1024,
+"height": 1024
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT",
+"frames": [
+{
+"md5": "b7a26c7aabe4a6e153040bdc4c738b12",
+"xtrim": 2,
+"ytrim": 2,
+"wtrim": 1020,
+"htrim": 1022,
+"wdraw": 1024,
+"hdraw": 1026
+}
+],
+"count": 1
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"md5": "b7a26c7aabe4a6e153040bdc4c738b12",
+"xtrim": 2,
+"ytrim": 2,
+"wtrim": 1020,
+"htrim": 1022,
+"wdraw": 1024,
+"hdraw": 1026
+}
+],
+"count": 1
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"flip": true
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 50,
+"uid": "O_BILLET",
+"packset": {
+"frames": [
+{
+"index2": -1,
+"x": 2,
+"y": 2,
+"w": 1020,
+"h": 1022
+},
+{
+"index": 1,
+"flipped": true
+}
+],
+"packs": [
+{
+"count": 2
 }
 ]
 }
@@ -60632,7 +63128,7 @@
 }
 ],
 "meta": {
-"nextAssetID": 37
+"nextAssetID": 51
 },
 "dialogs": [
 {
@@ -60667,7 +63163,18 @@
 "text": {
 "en": "Oh un magnifique mur a tagger."
 },
-"speaker": "O_HERO"
+"speaker": "O_HERO",
+"sentences": [
+{
+"id": 9,
+"text": {
+"en": "Taggons ce mur !!!"
+},
+"speaker": "O_HERO",
+"exit": true
+}
+],
+"exit": true
 },
 {
 "id": 6,
@@ -60691,10 +63198,24 @@
 }
 }
 ]
+},
+{
+"id": 10,
+"text": {
+"en": "C'est les tags de Léo."
+},
+"speaker": "O_HERO"
+},
+{
+"id": 11,
+"text": {
+"en": "Magnifique, un billet"
+},
+"speaker": "O_HERO"
 }
 ]
 },
-"nextID": 9
+"nextID": 12
 }
 },
 {
@@ -60830,10 +63351,35 @@
 "en": "Oh, merci tenez une bombe de peinture"
 },
 "speaker": "O_TRADER"
+},
+{
+"id": 56,
+"sentences": [
+{
+"id": 57,
+"sentences": [
+{
+"id": 58,
+"text": {
+"en": "La peinture non plus !!!"
+},
+"speaker": "O_TRADER"
+}
+],
+"text": {
+"en": "Bah, c'est déjà pas mal car l'argent ne tombe pas du ciel !!!"
+},
+"speaker": "O_HERO"
+}
+],
+"text": {
+"en": "Quoi que ca ?! "
+},
+"speaker": "O_TRADER"
 }
 ]
 },
-"nextID": 56
+"nextID": 59
 }
 }
 ]
